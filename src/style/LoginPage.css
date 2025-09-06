@@ -1,0 +1,101 @@
+/* LoginPage.css */
+
+.login-container {
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f0f9fb;
+    margin: 20px auto; /* center on screen */
+  }
+  
+  .login-left {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .login-left h2 {
+    color: #00838f;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .forgot {
+    text-align: right;
+    margin: 5px 0 15px 0;
+  }
+  
+  .forgot a {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #00838f;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #004d56;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-login:hover {
+    background: #006064;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.875rem;
+  }
+  
+  .signup-link a {
+    color: #00838f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-right {
+    flex: 1;
+    background: url("https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+      width: 95%;
+    }
+    .login-right {
+      height: 200px;
+    }
+  }
+  
