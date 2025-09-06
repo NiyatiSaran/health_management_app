@@ -1,0 +1,145 @@
+/* DietPlan.css - Updated to match HealthApp theme */
+
+.diet-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f1f5f9; /* light gray background */
+  }
+  
+  .diet-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* push content down and right to avoid overlap */
+  .diet-content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 60px;   /* sidebar space */
+    margin-top: 70px;  
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   /* navbar space */
+  }
+  
+  @media (max-width: 768px) {
+    .diet-content {
+      margin-left: 0;
+      margin-top: 70px;
+      padding: 1rem;
+    }
+  }
+  
+  /* Title */
+  .diet-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #064e3b; /* dark teal */
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Form Box */
+  .diet-form {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 4px solid #0f766e; /* teal accent */
+  }
+  
+  .diet-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.3rem;
+  }
+  
+  .diet-form input,
+  .diet-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+  }
+  
+  .diet-form input:focus,
+  .diet-form select:focus {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.2);
+  }
+  
+  /* Button */
+  .diet-button {
+    width: 100%;
+    background: #0f766e;
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .diet-button:hover {
+    background: #0d5c56;
+  }
+  
+  /* Diet Plan Output */
+  .diet-output {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: 2rem auto 0 auto;
+    border-top: 4px solid #0f766e;
+  }
+  
+  .diet-output h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .diet-output ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .diet-output li {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .diet-output li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 768px) {
+    .diet-button {
+      padding: 0.9rem 0.5rem;
+    }
+  }
+  

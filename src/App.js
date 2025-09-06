@@ -7,6 +7,7 @@ import Footer from "./components/common/Footer";
 import DashboardPage from "./pages/DashboardPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import DietPlan from "./pages/DietPlanPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/diet" element={<DietPlan />} />
         </Routes>
       </main>
 
